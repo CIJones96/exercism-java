@@ -2,7 +2,7 @@ package carsassemble;
 
 public class CarsAssemble {
 
-    public static double productionRatePerHour(int speed) {
+    public double productionRatePerHour(int speed) {
         int carsPerHour = 221 * speed;
 
         if (speed >= 1 && speed <=4) {
