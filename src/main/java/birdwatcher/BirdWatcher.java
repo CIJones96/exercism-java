@@ -29,10 +29,21 @@ class BirdWatcher {
     }
 
     public int getCountForFirstDays(int numberOfDays) {
-        throw new UnsupportedOperationException("Please implement the BirdWatcher.getCountForFirstDays() method");
+        int total = 0;
+        int limit = Math.min(numberOfDays, birdsPerDay.length);
+        for (int i = 0; i < limit; i++) {
+            total += birdsPerDay[i];
+        }
+        return total;
     }
 
     public int getBusyDays() {
-        throw new UnsupportedOperationException("Please implement the BirdWatcher.getBusyDays() method");
+        int count = 0;
+        for (int birds : birdsPerDay) {
+            if (birds >= 5) {
+                count++;
+            }
+        }
+        return count;
     }
 }
