@@ -42,7 +42,7 @@ bin/
 ### Mac OS ###
 .DS_Store.idea/
 
-echo ".idea/
+.idea/
 exercism.tgz
 shell/
-LICENSE" >> ~/.gitignore
+LICENSE
